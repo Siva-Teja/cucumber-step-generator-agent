@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stepDefinitionReport>
+<timestamp>2025-10-14 22:18:18</timestamp>
+<summary>
+<Total Steps>78</Total Steps>
+<Total Feature Files>3</Total Feature Files>
+<Generated Definitions>54</Generated Definitions>
+<Duplicate Steps>8</Duplicate Steps>
+<Unique Steps>70</Unique Steps>
+</summary>
+<featureFiles>
+<featureFile name="login.feature">
+<step>
+<keyword>When</keyword>
+<text>I enter username "valid@example.com" and password "password123"</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>And</keyword>
+<text>I click the login button</text>
+<type>WEB</type>
+</step>
+<step>
+<keyword>Then</keyword>
+<text>I should be redirected to the dashboard</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>And</keyword>
+<text>I should see the welcome message "Welcome, John!"</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>When</keyword>
+<text>I enter username "invalid@example.com" and password "wrongpassword"</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>And</keyword>
+<text>I click the login button</text>
+<type>WEB</type>
+</step>
+<step>
+<keyword>Then</keyword>
+<text>I should see the error message "Invalid credentials"</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>And</keyword>
+<text>I should remain on the login page</text>
+<type>WEB</type>
+</step>
+<step>
+<keyword>When</keyword>
+<text>I leave the username field empty</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>And</keyword>
+<text>I leave the password field empty</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>And</keyword>
+<text>I click the login button</text>
+<type>WEB</type>
+</step>
+<step>
+<keyword>Then</keyword>
+<text>I should see the validation error "Username and password are required"</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>When</keyword>
+<text>I enter username "<username>" and password "<password>"</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>And</keyword>
+<text>I click the login button</text>
+<type>WEB</type>
+</step>
+<step>
+<keyword>Then</keyword>
+<text>I should be redirected to the "<expected_page>"</text>
+<type>WEB</type>
+</step>
+<step>
+<keyword>And</keyword>
+<text>I should see the role-specific message "<role_message>"</text>
+<type>COMMON</type>
+</step>
+</featureFile>
+<featureFile name="api.feature">
+<step>
+<keyword>When</keyword>
+<text>I send a POST request to "/users" with the following data:</text>
+<type>API</type>
+</step>
+<step>
+<keyword>Then</keyword>
+<text>the response status code should be 201</text>
+<type>API</type>
+</step>
+<step>
+<keyword>And</keyword>
+<text>the response should contain "user_id"</text>
+<type>API</type>
+</step>
+<step>
+<keyword>And</keyword>
+<text>the response should contain "John Doe"</text>
+<type>API</type>
+</step>
+<step>
+<keyword>Given</keyword>
+<text>a user with ID "123" exists</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>When</keyword>
+<text>I send a GET request to "/users/123"</text>
+<type>API</type>
+</step>
+<step>
+<keyword>Then</keyword>
+<text>the response status code should be 200</text>
+<type>API</type>
+</step>
+<step>
+<keyword>And</keyword>
+<text>the response should contain "name"</text>
+<type>API</type>
+</step>
+<step>
+<keyword>And</keyword>
+<text>the response should contain "email"</text>
+<type>API</type>
+</step>
+<step>
+<keyword>Given</keyword>
+<text>a user with ID "123" exists</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>When</keyword>
+<text>I send a PUT request to "/users/123" with the following data:</text>
+<type>API</type>
+</step>
+<step>
+<keyword>Then</keyword>
+<text>the response status code should be 200</text>
+<type>API</type>
+</step>
+<step>
+<keyword>And</keyword>
+<text>the response should contain "Jane Doe"</text>
+<type>API</type>
+</step>
+<step>
+<keyword>Given</keyword>
+<text>a user with ID "123" exists</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>When</keyword>
+<text>I send a DELETE request to "/users/123"</text>
+<type>API</type>
+</step>
+<step>
+<keyword>Then</keyword>
+<text>the response status code should be 204</text>
+<type>API</type>
+</step>
+<step>
+<keyword>And</keyword>
+<text>the user should be deleted</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>When</keyword>
+<text>I send a GET request to "/users?page=1&limit=10"</text>
+<type>API</type>
+</step>
+<step>
+<keyword>Then</keyword>
+<text>the response status code should be 200</text>
+<type>API</type>
+</step>
+<step>
+<keyword>And</keyword>
+<text>the response should contain "users"</text>
+<type>API</type>
+</step>
+<step>
+<keyword>And</keyword>
+<text>the response should contain "total_count"</text>
+<type>API</type>
+</step>
+<step>
+<keyword>And</keyword>
+<text>the response should contain "page"</text>
+<type>API</type>
+</step>
+<step>
+<keyword>When</keyword>
+<text>I send a GET request to "/users/search?email=john@example.com"</text>
+<type>API</type>
+</step>
+<step>
+<keyword>Then</keyword>
+<text>the response status code should be 200</text>
+<type>API</type>
+</step>
+<step>
+<keyword>And</keyword>
+<text>the response should contain "users"</text>
+<type>API</type>
+</step>
+<step>
+<keyword>And</keyword>
+<text>each user should have "email" field</text>
+<type>COMMON</type>
+</step>
+</featureFile>
+<featureFile name="mobile.feature">
+<step>
+<keyword>When</keyword>
+<text>I tap the profile icon</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>Then</keyword>
+<text>I should see the profile screen</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>And</keyword>
+<text>I should see my profile information</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>When</keyword>
+<text>I tap the search icon</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>And</keyword>
+<text>I enter "laptop" in the search field</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>And</keyword>
+<text>I tap the search button</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>Then</keyword>
+<text>I should see search results</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>And</keyword>
+<text>I should see at least 5 products</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>Given</keyword>
+<text>I am on the product details screen</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>When</keyword>
+<text>I tap the "Add to Cart" button</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>Then</keyword>
+<text>I should see the success message "Item added to cart"</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>And</keyword>
+<text>the cart icon should show "1" items</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>Given</keyword>
+<text>I am on the product details screen</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>When</keyword>
+<text>I swipe left on the product image</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>Then</keyword>
+<text>I should see the next product image</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>When</keyword>
+<text>I swipe right on the product image</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>Then</keyword>
+<text>I should see the previous product image</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>Given</keyword>
+<text>I am on the products screen</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>When</keyword>
+<text>I scroll down</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>Then</keyword>
+<text>I should see more products</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>And</keyword>
+<text>I should see the loading indicator</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>When</keyword>
+<text>I scroll to the bottom</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>Then</keyword>
+<text>I should see "Load More" button</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>Given</keyword>
+<text>I am on the products screen</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>When</keyword>
+<text>I tap the filter button</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>And</keyword>
+<text>I select "Electronics" category</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>And</keyword>
+<text>I tap the apply button</text>
+<type>MOBILE</type>
+</step>
+<step>
+<keyword>Then</keyword>
+<text>I should see only electronics products</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>And</keyword>
+<text>the filter should show "Electronics" as selected</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>Given</keyword>
+<text>I am logged in to the mobile app</text>
+<type>MOBILE</type>
+</step>
+<step>
+<keyword>When</keyword>
+<text>I tap the menu button</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>And</keyword>
+<text>I tap the logout option</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>Then</keyword>
+<text>I should see the confirmation dialog</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>When</keyword>
+<text>I tap the confirm button</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>Then</keyword>
+<text>I should be logged out</text>
+<type>COMMON</type>
+</step>
+<step>
+<keyword>And</keyword>
+<text>I should see the login screen</text>
+<type>COMMON</type>
+</step>
+</featureFile>
+</featureFiles>
+</stepDefinitionReport>

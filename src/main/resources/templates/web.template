@@ -1,0 +1,33 @@
+// Web automation step implementation
+{loggerStatement}
+
+try {
+    // TODO: Implement web automation logic
+    // Example implementations:
+    
+    if ("{stepText}".contains("click")) {
+        // driver.findElement(By.xpath("//button[@id='submit']")).click();
+        logger.info("Clicking element");
+    } else if ("{stepText}".contains("input") || "{stepText}".contains("enter")) {
+        // WebElement element = driver.findElement(By.id("input-field"));
+        // element.clear();
+        // element.sendKeys(param1);
+        logger.info("Entering text: {}", param1);
+    } else if ("{stepText}".contains("verify") || "{stepText}".contains("assert")) {
+        // WebElement element = driver.findElement(By.xpath("//div[@class='result']"));
+        // Assert.assertTrue(element.isDisplayed());
+        logger.info("Verifying element is displayed");
+    } else if ("{stepText}".contains("navigate") || "{stepText}".contains("go to")) {
+        // driver.navigate().to(param1);
+        logger.info("Navigating to: {}", param1);
+    } else {
+        logger.warn("Step not implemented: {}", "{stepText}");
+    }
+    
+    // Add explicit wait if needed
+    // wait.until(ExpectedConditions.elementToBeClickable(By.id("element")));
+    
+} catch (Exception e) {
+    logger.error("Error executing web step: {}", e.getMessage());
+    throw new RuntimeException("Web step execution failed", e);
+}

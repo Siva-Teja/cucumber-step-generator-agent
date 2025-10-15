@@ -1,0 +1,42 @@
+// Mobile automation step implementation
+{loggerStatement}
+
+try {
+    // TODO: Implement mobile automation logic
+    // Example implementations:
+    
+    if ("{stepText}".contains("tap") || "{stepText}".contains("click")) {
+        // MobileElement element = driver.findElement(By.id("button"));
+        // element.tap(1, 100);
+        logger.info("Tapping element");
+    } else if ("{stepText}".contains("swipe")) {
+        // TouchAction touchAction = new TouchAction(driver);
+        // touchAction.press(PointOption.point(100, 200))
+        //           .moveTo(PointOption.point(100, 100))
+        //           .release().perform();
+        logger.info("Swiping screen");
+    } else if ("{stepText}".contains("input") || "{stepText}".contains("enter")) {
+        // MobileElement element = driver.findElement(By.id("text-field"));
+        // element.clear();
+        // element.sendKeys(param1);
+        logger.info("Entering text: {}", param1);
+    } else if ("{stepText}".contains("verify") || "{stepText}".contains("assert")) {
+        // MobileElement element = driver.findElement(By.xpath("//android.widget.TextView"));
+        // Assert.assertTrue(element.isDisplayed());
+        logger.info("Verifying element is displayed");
+    } else if ("{stepText}".contains("scroll")) {
+        // driver.findElement(MobileBy.AndroidUIAutomator(
+        //     "new UiScrollable(new UiSelector()).scrollIntoView(text(\"Element\"))"));
+        logger.info("Scrolling to element");
+    } else {
+        logger.warn("Step not implemented: {}", "{stepText}");
+    }
+    
+    // Add mobile-specific waits
+    // WebDriverWait wait = new WebDriverWait(driver, 10);
+    // wait.until(ExpectedConditions.elementToBeClickable(By.id("element")));
+    
+} catch (Exception e) {
+    logger.error("Error executing mobile step: {}", e.getMessage());
+    throw new RuntimeException("Mobile step execution failed", e);
+}

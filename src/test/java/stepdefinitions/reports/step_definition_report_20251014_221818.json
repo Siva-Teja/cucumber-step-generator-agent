@@ -1,0 +1,1171 @@
+{
+  "summary" : {
+    "Total Steps" : 78,
+    "Total Feature Files" : 3,
+    "Generated Definitions" : 54,
+    "Duplicate Steps" : 8,
+    "Unique Steps" : 70
+  },
+  "duplicates" : {
+    "FeatureStep{keyword='Given', text='I am on the product details screen', parameters=[], featureFile='mobile.feature', lineNumber=24, stepType='COMMON'}" : [ "mobile.feature", "mobile.feature" ],
+    "FeatureStep{keyword='When', text='I send a GET request to \"/users/123\"', parameters=[/users/123, 123], featureFile='api.feature', lineNumber=25, stepType='API'}" : [ "api.feature", "api.feature", "api.feature" ],
+    "FeatureStep{keyword='Given', text='I am on the products screen', parameters=[], featureFile='mobile.feature', lineNumber=37, stepType='COMMON'}" : [ "mobile.feature", "mobile.feature" ],
+    "FeatureStep{keyword='Given', text='a user with ID \"123\" exists', parameters=[123, 123], featureFile='api.feature', lineNumber=24, stepType='COMMON'}" : [ "api.feature", "api.feature", "api.feature" ],
+    "FeatureStep{keyword='And', text='the response should contain \"user_id\"', parameters=[user_id], featureFile='api.feature', lineNumber=20, stepType='API'}" : [ "api.feature", "api.feature", "api.feature", "api.feature", "api.feature", "api.feature", "api.feature", "api.feature", "api.feature" ],
+    "FeatureStep{keyword='When', text='I enter username \"valid@example.com\" and password \"password123\"', parameters=[valid@example.com, password123], featureFile='login.feature', lineNumber=11, stepType='COMMON'}" : [ "login.feature", "login.feature", "login.feature" ],
+    "FeatureStep{keyword='Then', text='the response status code should be 201', parameters=[201], featureFile='api.feature', lineNumber=19, stepType='API'}" : [ "api.feature", "api.feature", "api.feature", "api.feature", "api.feature", "api.feature" ],
+    "FeatureStep{keyword='And', text='I click the login button', parameters=[], featureFile='login.feature', lineNumber=12, stepType='WEB'}" : [ "login.feature", "login.feature", "login.feature", "login.feature" ]
+  },
+  "featureFiles" : {
+    "login.feature" : [ {
+      "keyword" : "When",
+      "text" : "I enter username \"valid@example.com\" and password \"password123\"",
+      "parameters" : [ "valid@example.com", "password123" ],
+      "featureFile" : "login.feature",
+      "lineNumber" : 11,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "And",
+      "text" : "I click the login button",
+      "parameters" : [ ],
+      "featureFile" : "login.feature",
+      "lineNumber" : 12,
+      "stepType" : "WEB"
+    }, {
+      "keyword" : "Then",
+      "text" : "I should be redirected to the dashboard",
+      "parameters" : [ ],
+      "featureFile" : "login.feature",
+      "lineNumber" : 13,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "And",
+      "text" : "I should see the welcome message \"Welcome, John!\"",
+      "parameters" : [ "Welcome, John!" ],
+      "featureFile" : "login.feature",
+      "lineNumber" : 14,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "When",
+      "text" : "I enter username \"invalid@example.com\" and password \"wrongpassword\"",
+      "parameters" : [ "invalid@example.com", "wrongpassword" ],
+      "featureFile" : "login.feature",
+      "lineNumber" : 17,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "And",
+      "text" : "I click the login button",
+      "parameters" : [ ],
+      "featureFile" : "login.feature",
+      "lineNumber" : 18,
+      "stepType" : "WEB"
+    }, {
+      "keyword" : "Then",
+      "text" : "I should see the error message \"Invalid credentials\"",
+      "parameters" : [ "Invalid credentials" ],
+      "featureFile" : "login.feature",
+      "lineNumber" : 19,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "And",
+      "text" : "I should remain on the login page",
+      "parameters" : [ ],
+      "featureFile" : "login.feature",
+      "lineNumber" : 20,
+      "stepType" : "WEB"
+    }, {
+      "keyword" : "When",
+      "text" : "I leave the username field empty",
+      "parameters" : [ ],
+      "featureFile" : "login.feature",
+      "lineNumber" : 23,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "And",
+      "text" : "I leave the password field empty",
+      "parameters" : [ ],
+      "featureFile" : "login.feature",
+      "lineNumber" : 24,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "And",
+      "text" : "I click the login button",
+      "parameters" : [ ],
+      "featureFile" : "login.feature",
+      "lineNumber" : 25,
+      "stepType" : "WEB"
+    }, {
+      "keyword" : "Then",
+      "text" : "I should see the validation error \"Username and password are required\"",
+      "parameters" : [ "Username and password are required" ],
+      "featureFile" : "login.feature",
+      "lineNumber" : 26,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "When",
+      "text" : "I enter username \"<username>\" and password \"<password>\"",
+      "parameters" : [ "<username>", "<password>" ],
+      "featureFile" : "login.feature",
+      "lineNumber" : 29,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "And",
+      "text" : "I click the login button",
+      "parameters" : [ ],
+      "featureFile" : "login.feature",
+      "lineNumber" : 30,
+      "stepType" : "WEB"
+    }, {
+      "keyword" : "Then",
+      "text" : "I should be redirected to the \"<expected_page>\"",
+      "parameters" : [ "<expected_page>" ],
+      "featureFile" : "login.feature",
+      "lineNumber" : 31,
+      "stepType" : "WEB"
+    }, {
+      "keyword" : "And",
+      "text" : "I should see the role-specific message \"<role_message>\"",
+      "parameters" : [ "<role_message>" ],
+      "featureFile" : "login.feature",
+      "lineNumber" : 32,
+      "stepType" : "COMMON"
+    } ],
+    "api.feature" : [ {
+      "keyword" : "When",
+      "text" : "I send a POST request to \"/users\" with the following data:",
+      "parameters" : [ "/users" ],
+      "featureFile" : "api.feature",
+      "lineNumber" : 11,
+      "stepType" : "API"
+    }, {
+      "keyword" : "Then",
+      "text" : "the response status code should be 201",
+      "parameters" : [ "201" ],
+      "featureFile" : "api.feature",
+      "lineNumber" : 19,
+      "stepType" : "API"
+    }, {
+      "keyword" : "And",
+      "text" : "the response should contain \"user_id\"",
+      "parameters" : [ "user_id" ],
+      "featureFile" : "api.feature",
+      "lineNumber" : 20,
+      "stepType" : "API"
+    }, {
+      "keyword" : "And",
+      "text" : "the response should contain \"John Doe\"",
+      "parameters" : [ "John Doe" ],
+      "featureFile" : "api.feature",
+      "lineNumber" : 21,
+      "stepType" : "API"
+    }, {
+      "keyword" : "Given",
+      "text" : "a user with ID \"123\" exists",
+      "parameters" : [ "123", "123" ],
+      "featureFile" : "api.feature",
+      "lineNumber" : 24,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "When",
+      "text" : "I send a GET request to \"/users/123\"",
+      "parameters" : [ "/users/123", "123" ],
+      "featureFile" : "api.feature",
+      "lineNumber" : 25,
+      "stepType" : "API"
+    }, {
+      "keyword" : "Then",
+      "text" : "the response status code should be 200",
+      "parameters" : [ "200" ],
+      "featureFile" : "api.feature",
+      "lineNumber" : 26,
+      "stepType" : "API"
+    }, {
+      "keyword" : "And",
+      "text" : "the response should contain \"name\"",
+      "parameters" : [ "name" ],
+      "featureFile" : "api.feature",
+      "lineNumber" : 27,
+      "stepType" : "API"
+    }, {
+      "keyword" : "And",
+      "text" : "the response should contain \"email\"",
+      "parameters" : [ "email" ],
+      "featureFile" : "api.feature",
+      "lineNumber" : 28,
+      "stepType" : "API"
+    }, {
+      "keyword" : "Given",
+      "text" : "a user with ID \"123\" exists",
+      "parameters" : [ "123", "123" ],
+      "featureFile" : "api.feature",
+      "lineNumber" : 31,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "When",
+      "text" : "I send a PUT request to \"/users/123\" with the following data:",
+      "parameters" : [ "/users/123", "123" ],
+      "featureFile" : "api.feature",
+      "lineNumber" : 32,
+      "stepType" : "API"
+    }, {
+      "keyword" : "Then",
+      "text" : "the response status code should be 200",
+      "parameters" : [ "200" ],
+      "featureFile" : "api.feature",
+      "lineNumber" : 39,
+      "stepType" : "API"
+    }, {
+      "keyword" : "And",
+      "text" : "the response should contain \"Jane Doe\"",
+      "parameters" : [ "Jane Doe" ],
+      "featureFile" : "api.feature",
+      "lineNumber" : 40,
+      "stepType" : "API"
+    }, {
+      "keyword" : "Given",
+      "text" : "a user with ID \"123\" exists",
+      "parameters" : [ "123", "123" ],
+      "featureFile" : "api.feature",
+      "lineNumber" : 43,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "When",
+      "text" : "I send a DELETE request to \"/users/123\"",
+      "parameters" : [ "/users/123", "123" ],
+      "featureFile" : "api.feature",
+      "lineNumber" : 44,
+      "stepType" : "API"
+    }, {
+      "keyword" : "Then",
+      "text" : "the response status code should be 204",
+      "parameters" : [ "204" ],
+      "featureFile" : "api.feature",
+      "lineNumber" : 45,
+      "stepType" : "API"
+    }, {
+      "keyword" : "And",
+      "text" : "the user should be deleted",
+      "parameters" : [ ],
+      "featureFile" : "api.feature",
+      "lineNumber" : 46,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "When",
+      "text" : "I send a GET request to \"/users?page=1&limit=10\"",
+      "parameters" : [ "/users?page=1&limit=10", "1", "10" ],
+      "featureFile" : "api.feature",
+      "lineNumber" : 49,
+      "stepType" : "API"
+    }, {
+      "keyword" : "Then",
+      "text" : "the response status code should be 200",
+      "parameters" : [ "200" ],
+      "featureFile" : "api.feature",
+      "lineNumber" : 50,
+      "stepType" : "API"
+    }, {
+      "keyword" : "And",
+      "text" : "the response should contain \"users\"",
+      "parameters" : [ "users" ],
+      "featureFile" : "api.feature",
+      "lineNumber" : 51,
+      "stepType" : "API"
+    }, {
+      "keyword" : "And",
+      "text" : "the response should contain \"total_count\"",
+      "parameters" : [ "total_count" ],
+      "featureFile" : "api.feature",
+      "lineNumber" : 52,
+      "stepType" : "API"
+    }, {
+      "keyword" : "And",
+      "text" : "the response should contain \"page\"",
+      "parameters" : [ "page" ],
+      "featureFile" : "api.feature",
+      "lineNumber" : 53,
+      "stepType" : "API"
+    }, {
+      "keyword" : "When",
+      "text" : "I send a GET request to \"/users/search?email=john@example.com\"",
+      "parameters" : [ "/users/search?email=john@example.com" ],
+      "featureFile" : "api.feature",
+      "lineNumber" : 56,
+      "stepType" : "API"
+    }, {
+      "keyword" : "Then",
+      "text" : "the response status code should be 200",
+      "parameters" : [ "200" ],
+      "featureFile" : "api.feature",
+      "lineNumber" : 57,
+      "stepType" : "API"
+    }, {
+      "keyword" : "And",
+      "text" : "the response should contain \"users\"",
+      "parameters" : [ "users" ],
+      "featureFile" : "api.feature",
+      "lineNumber" : 58,
+      "stepType" : "API"
+    }, {
+      "keyword" : "And",
+      "text" : "each user should have \"email\" field",
+      "parameters" : [ "email" ],
+      "featureFile" : "api.feature",
+      "lineNumber" : 59,
+      "stepType" : "COMMON"
+    } ],
+    "mobile.feature" : [ {
+      "keyword" : "When",
+      "text" : "I tap the profile icon",
+      "parameters" : [ ],
+      "featureFile" : "mobile.feature",
+      "lineNumber" : 12,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "Then",
+      "text" : "I should see the profile screen",
+      "parameters" : [ ],
+      "featureFile" : "mobile.feature",
+      "lineNumber" : 13,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "And",
+      "text" : "I should see my profile information",
+      "parameters" : [ ],
+      "featureFile" : "mobile.feature",
+      "lineNumber" : 14,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "When",
+      "text" : "I tap the search icon",
+      "parameters" : [ ],
+      "featureFile" : "mobile.feature",
+      "lineNumber" : 17,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "And",
+      "text" : "I enter \"laptop\" in the search field",
+      "parameters" : [ "laptop" ],
+      "featureFile" : "mobile.feature",
+      "lineNumber" : 18,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "And",
+      "text" : "I tap the search button",
+      "parameters" : [ ],
+      "featureFile" : "mobile.feature",
+      "lineNumber" : 19,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "Then",
+      "text" : "I should see search results",
+      "parameters" : [ ],
+      "featureFile" : "mobile.feature",
+      "lineNumber" : 20,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "And",
+      "text" : "I should see at least 5 products",
+      "parameters" : [ "5" ],
+      "featureFile" : "mobile.feature",
+      "lineNumber" : 21,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "Given",
+      "text" : "I am on the product details screen",
+      "parameters" : [ ],
+      "featureFile" : "mobile.feature",
+      "lineNumber" : 24,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "When",
+      "text" : "I tap the \"Add to Cart\" button",
+      "parameters" : [ "Add to Cart" ],
+      "featureFile" : "mobile.feature",
+      "lineNumber" : 25,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "Then",
+      "text" : "I should see the success message \"Item added to cart\"",
+      "parameters" : [ "Item added to cart" ],
+      "featureFile" : "mobile.feature",
+      "lineNumber" : 26,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "And",
+      "text" : "the cart icon should show \"1\" items",
+      "parameters" : [ "1", "1" ],
+      "featureFile" : "mobile.feature",
+      "lineNumber" : 27,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "Given",
+      "text" : "I am on the product details screen",
+      "parameters" : [ ],
+      "featureFile" : "mobile.feature",
+      "lineNumber" : 30,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "When",
+      "text" : "I swipe left on the product image",
+      "parameters" : [ ],
+      "featureFile" : "mobile.feature",
+      "lineNumber" : 31,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "Then",
+      "text" : "I should see the next product image",
+      "parameters" : [ ],
+      "featureFile" : "mobile.feature",
+      "lineNumber" : 32,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "When",
+      "text" : "I swipe right on the product image",
+      "parameters" : [ ],
+      "featureFile" : "mobile.feature",
+      "lineNumber" : 33,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "Then",
+      "text" : "I should see the previous product image",
+      "parameters" : [ ],
+      "featureFile" : "mobile.feature",
+      "lineNumber" : 34,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "Given",
+      "text" : "I am on the products screen",
+      "parameters" : [ ],
+      "featureFile" : "mobile.feature",
+      "lineNumber" : 37,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "When",
+      "text" : "I scroll down",
+      "parameters" : [ ],
+      "featureFile" : "mobile.feature",
+      "lineNumber" : 38,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "Then",
+      "text" : "I should see more products",
+      "parameters" : [ ],
+      "featureFile" : "mobile.feature",
+      "lineNumber" : 39,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "And",
+      "text" : "I should see the loading indicator",
+      "parameters" : [ ],
+      "featureFile" : "mobile.feature",
+      "lineNumber" : 40,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "When",
+      "text" : "I scroll to the bottom",
+      "parameters" : [ ],
+      "featureFile" : "mobile.feature",
+      "lineNumber" : 41,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "Then",
+      "text" : "I should see \"Load More\" button",
+      "parameters" : [ "Load More" ],
+      "featureFile" : "mobile.feature",
+      "lineNumber" : 42,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "Given",
+      "text" : "I am on the products screen",
+      "parameters" : [ ],
+      "featureFile" : "mobile.feature",
+      "lineNumber" : 45,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "When",
+      "text" : "I tap the filter button",
+      "parameters" : [ ],
+      "featureFile" : "mobile.feature",
+      "lineNumber" : 46,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "And",
+      "text" : "I select \"Electronics\" category",
+      "parameters" : [ "Electronics" ],
+      "featureFile" : "mobile.feature",
+      "lineNumber" : 47,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "And",
+      "text" : "I tap the apply button",
+      "parameters" : [ ],
+      "featureFile" : "mobile.feature",
+      "lineNumber" : 48,
+      "stepType" : "MOBILE"
+    }, {
+      "keyword" : "Then",
+      "text" : "I should see only electronics products",
+      "parameters" : [ ],
+      "featureFile" : "mobile.feature",
+      "lineNumber" : 49,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "And",
+      "text" : "the filter should show \"Electronics\" as selected",
+      "parameters" : [ "Electronics" ],
+      "featureFile" : "mobile.feature",
+      "lineNumber" : 50,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "Given",
+      "text" : "I am logged in to the mobile app",
+      "parameters" : [ ],
+      "featureFile" : "mobile.feature",
+      "lineNumber" : 53,
+      "stepType" : "MOBILE"
+    }, {
+      "keyword" : "When",
+      "text" : "I tap the menu button",
+      "parameters" : [ ],
+      "featureFile" : "mobile.feature",
+      "lineNumber" : 54,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "And",
+      "text" : "I tap the logout option",
+      "parameters" : [ ],
+      "featureFile" : "mobile.feature",
+      "lineNumber" : 55,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "Then",
+      "text" : "I should see the confirmation dialog",
+      "parameters" : [ ],
+      "featureFile" : "mobile.feature",
+      "lineNumber" : 56,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "When",
+      "text" : "I tap the confirm button",
+      "parameters" : [ ],
+      "featureFile" : "mobile.feature",
+      "lineNumber" : 57,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "Then",
+      "text" : "I should be logged out",
+      "parameters" : [ ],
+      "featureFile" : "mobile.feature",
+      "lineNumber" : 58,
+      "stepType" : "COMMON"
+    }, {
+      "keyword" : "And",
+      "text" : "I should see the login screen",
+      "parameters" : [ ],
+      "featureFile" : "mobile.feature",
+      "lineNumber" : 59,
+      "stepType" : "COMMON"
+    } ]
+  },
+  "timestamp" : "2025-10-14 22:18:18",
+  "generatedDefinitions" : {
+    "WEB" : [ {
+      "methodName" : "iShouldRemainOnTheLoginPage",
+      "annotation" : "@And(\"I should remain on the login page\")",
+      "methodSignature" : "public void iShouldRemainOnTheLoginPage()",
+      "methodBody" : "// TODO: Implement web automation logic\n// Example: driver.findElement(By.xpath(\"//button[@id='submit']\")).click();\nlogger.info(\"Executing web step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "WEBStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.web",
+      "parameters" : [ ],
+      "stepType" : "WEB",
+      "originalStepText" : "I should remain on the login page",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/web/WEBStepDefinitions.java"
+    }, {
+      "methodName" : "iShouldBeRedirectedToThe",
+      "annotation" : "@Then(\"I should be redirected to the \"\\(\\[\\^\"\\]\\+\\)\"\")",
+      "methodSignature" : "public void iShouldBeRedirectedToThe(String param1)",
+      "methodBody" : "// TODO: Implement web automation logic\n// Example: driver.findElement(By.xpath(\"//button[@id='submit']\")).click();\nlogger.info(\"Executing web step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "WEBStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.web",
+      "parameters" : [ "<expected_page>" ],
+      "stepType" : "WEB",
+      "originalStepText" : "I should be redirected to the \"<expected_page>\"",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/web/WEBStepDefinitions.java"
+    }, {
+      "methodName" : "iClickTheLoginButton",
+      "annotation" : "@And(\"I click the login button\")",
+      "methodSignature" : "public void iClickTheLoginButton()",
+      "methodBody" : "// TODO: Implement web automation logic\n// Example: driver.findElement(By.xpath(\"//button[@id='submit']\")).click();\nlogger.info(\"Executing web step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "WEBStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.web",
+      "parameters" : [ ],
+      "stepType" : "WEB",
+      "originalStepText" : "I click the login button",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/web/WEBStepDefinitions.java"
+    } ],
+    "COMMON" : [ {
+      "methodName" : "iTapTheSearchButton",
+      "annotation" : "@And(\"I tap the search button\")",
+      "methodSignature" : "public void iTapTheSearchButton()",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ ],
+      "stepType" : "COMMON",
+      "originalStepText" : "I tap the search button",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "iTapTheLogoutOption",
+      "annotation" : "@And(\"I tap the logout option\")",
+      "methodSignature" : "public void iTapTheLogoutOption()",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ ],
+      "stepType" : "COMMON",
+      "originalStepText" : "I tap the logout option",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "iShouldSeeAtLeastProducts",
+      "annotation" : "@And(\"I should see at least \\(\\\\d\\+\\) products\")",
+      "methodSignature" : "public void iShouldSeeAtLeastProducts(int param1)",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ "5" ],
+      "stepType" : "COMMON",
+      "originalStepText" : "I should see at least 5 products",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "iScrollToTheBottom",
+      "annotation" : "@When(\"I scroll to the bottom\")",
+      "methodSignature" : "public void iScrollToTheBottom()",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ ],
+      "stepType" : "COMMON",
+      "originalStepText" : "I scroll to the bottom",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "iShouldSeeTheNextProductImage",
+      "annotation" : "@Then(\"I should see the next product image\")",
+      "methodSignature" : "public void iShouldSeeTheNextProductImage()",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ ],
+      "stepType" : "COMMON",
+      "originalStepText" : "I should see the next product image",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "iShouldSeeTheLoadingIndicator",
+      "annotation" : "@And(\"I should see the loading indicator\")",
+      "methodSignature" : "public void iShouldSeeTheLoadingIndicator()",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ ],
+      "stepType" : "COMMON",
+      "originalStepText" : "I should see the loading indicator",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "iShouldSeeButton",
+      "annotation" : "@Then(\"I should see \"\\(\\[\\^\"\\]\\+\\)\" button\")",
+      "methodSignature" : "public void iShouldSeeButton(String param1)",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ "Load More" ],
+      "stepType" : "COMMON",
+      "originalStepText" : "I should see \"Load More\" button",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "iShouldSeeMoreProducts",
+      "annotation" : "@Then(\"I should see more products\")",
+      "methodSignature" : "public void iShouldSeeMoreProducts()",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ ],
+      "stepType" : "COMMON",
+      "originalStepText" : "I should see more products",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "iTapTheConfirmButton",
+      "annotation" : "@When(\"I tap the confirm button\")",
+      "methodSignature" : "public void iTapTheConfirmButton()",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ ],
+      "stepType" : "COMMON",
+      "originalStepText" : "I tap the confirm button",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "iLeaveThePasswordFieldEmpty",
+      "annotation" : "@And(\"I leave the password field empty\")",
+      "methodSignature" : "public void iLeaveThePasswordFieldEmpty()",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ ],
+      "stepType" : "COMMON",
+      "originalStepText" : "I leave the password field empty",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "iTapTheProfileIcon",
+      "annotation" : "@When(\"I tap the profile icon\")",
+      "methodSignature" : "public void iTapTheProfileIcon()",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ ],
+      "stepType" : "COMMON",
+      "originalStepText" : "I tap the profile icon",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "iShouldSeeThePreviousProductImage",
+      "annotation" : "@Then(\"I should see the previous product image\")",
+      "methodSignature" : "public void iShouldSeeThePreviousProductImage()",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ ],
+      "stepType" : "COMMON",
+      "originalStepText" : "I should see the previous product image",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "theFilterShouldShowAsSelected",
+      "annotation" : "@And(\"the filter should show \"\\(\\[\\^\"\\]\\+\\)\" as selected\")",
+      "methodSignature" : "public void theFilterShouldShowAsSelected(String param1)",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ "Electronics" ],
+      "stepType" : "COMMON",
+      "originalStepText" : "the filter should show \"Electronics\" as selected",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "theCartIconShouldShowItems",
+      "annotation" : "@And(\"the cart icon should show \"\\(\\[\\^\"\\]\\+\\)\" items\")",
+      "methodSignature" : "public void theCartIconShouldShowItems(int param1, int param2)",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ "1", "1" ],
+      "stepType" : "COMMON",
+      "originalStepText" : "the cart icon should show \"1\" items",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "iTapTheMenuButton",
+      "annotation" : "@When(\"I tap the menu button\")",
+      "methodSignature" : "public void iTapTheMenuButton()",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ ],
+      "stepType" : "COMMON",
+      "originalStepText" : "I tap the menu button",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "iTapTheSearchIcon",
+      "annotation" : "@When(\"I tap the search icon\")",
+      "methodSignature" : "public void iTapTheSearchIcon()",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ ],
+      "stepType" : "COMMON",
+      "originalStepText" : "I tap the search icon",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "iShouldSeeTheProfileScreen",
+      "annotation" : "@Then(\"I should see the profile screen\")",
+      "methodSignature" : "public void iShouldSeeTheProfileScreen()",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ ],
+      "stepType" : "COMMON",
+      "originalStepText" : "I should see the profile screen",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "iShouldSeeTheSuccessMessage",
+      "annotation" : "@Then(\"I should see the success message \"\\(\\[\\^\"\\]\\+\\)\"\")",
+      "methodSignature" : "public void iShouldSeeTheSuccessMessage(String param1)",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ "Item added to cart" ],
+      "stepType" : "COMMON",
+      "originalStepText" : "I should see the success message \"Item added to cart\"",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "eachUserShouldHaveField",
+      "annotation" : "@And(\"each user should have \"\\(\\[\\^\"\\]\\+\\)\" field\")",
+      "methodSignature" : "public void eachUserShouldHaveField(String param1)",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ "email" ],
+      "stepType" : "COMMON",
+      "originalStepText" : "each user should have \"email\" field",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "iTapTheFilterButton",
+      "annotation" : "@When(\"I tap the filter button\")",
+      "methodSignature" : "public void iTapTheFilterButton()",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ ],
+      "stepType" : "COMMON",
+      "originalStepText" : "I tap the filter button",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "iEnterUsernameAndPassword",
+      "annotation" : "@When(\"I enter username \"\\(\\[\\^\"\\]\\+\\)\" and password \"\\(\\[\\^\"\\]\\+\\)\"\")",
+      "methodSignature" : "public void iEnterUsernameAndPassword(String param1, String param2)",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ "valid@example.com", "password123" ],
+      "stepType" : "COMMON",
+      "originalStepText" : "I enter username \"valid@example.com\" and password \"password123\"",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "iEnterInTheSearchField",
+      "annotation" : "@And(\"I enter \"\\(\\[\\^\"\\]\\+\\)\" in the search field\")",
+      "methodSignature" : "public void iEnterInTheSearchField(String param1)",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ "laptop" ],
+      "stepType" : "COMMON",
+      "originalStepText" : "I enter \"laptop\" in the search field",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "iSwipeLeftOnTheProductImage",
+      "annotation" : "@When(\"I swipe left on the product image\")",
+      "methodSignature" : "public void iSwipeLeftOnTheProductImage()",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ ],
+      "stepType" : "COMMON",
+      "originalStepText" : "I swipe left on the product image",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "iShouldBeRedirectedToTheDashboard",
+      "annotation" : "@Then(\"I should be redirected to the dashboard\")",
+      "methodSignature" : "public void iShouldBeRedirectedToTheDashboard()",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ ],
+      "stepType" : "COMMON",
+      "originalStepText" : "I should be redirected to the dashboard",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "iShouldSeeTheRolespecificMessage",
+      "annotation" : "@And(\"I should see the role-specific message \"\\(\\[\\^\"\\]\\+\\)\"\")",
+      "methodSignature" : "public void iShouldSeeTheRolespecificMessage(String param1)",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ "<role_message>" ],
+      "stepType" : "COMMON",
+      "originalStepText" : "I should see the role-specific message \"<role_message>\"",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "iShouldSeeMyProfileInformation",
+      "annotation" : "@And(\"I should see my profile information\")",
+      "methodSignature" : "public void iShouldSeeMyProfileInformation()",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ ],
+      "stepType" : "COMMON",
+      "originalStepText" : "I should see my profile information",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "iSwipeRightOnTheProductImage",
+      "annotation" : "@When(\"I swipe right on the product image\")",
+      "methodSignature" : "public void iSwipeRightOnTheProductImage()",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ ],
+      "stepType" : "COMMON",
+      "originalStepText" : "I swipe right on the product image",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "iTapTheButton",
+      "annotation" : "@When(\"I tap the \"\\(\\[\\^\"\\]\\+\\)\" button\")",
+      "methodSignature" : "public void iTapTheButton(String param1)",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ "Add to Cart" ],
+      "stepType" : "COMMON",
+      "originalStepText" : "I tap the \"Add to Cart\" button",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "iScrollDown",
+      "annotation" : "@When(\"I scroll down\")",
+      "methodSignature" : "public void iScrollDown()",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ ],
+      "stepType" : "COMMON",
+      "originalStepText" : "I scroll down",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "iShouldSeeTheConfirmationDialog",
+      "annotation" : "@Then(\"I should see the confirmation dialog\")",
+      "methodSignature" : "public void iShouldSeeTheConfirmationDialog()",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ ],
+      "stepType" : "COMMON",
+      "originalStepText" : "I should see the confirmation dialog",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "iShouldSeeTheWelcomeMessage",
+      "annotation" : "@And(\"I should see the welcome message \"\\(\\[\\^\"\\]\\+\\)\"\")",
+      "methodSignature" : "public void iShouldSeeTheWelcomeMessage(String param1)",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ "Welcome, John!" ],
+      "stepType" : "COMMON",
+      "originalStepText" : "I should see the welcome message \"Welcome, John!\"",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "iSelectCategory",
+      "annotation" : "@And(\"I select \"\\(\\[\\^\"\\]\\+\\)\" category\")",
+      "methodSignature" : "public void iSelectCategory(String param1)",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ "Electronics" ],
+      "stepType" : "COMMON",
+      "originalStepText" : "I select \"Electronics\" category",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "iShouldSeeSearchResults",
+      "annotation" : "@Then(\"I should see search results\")",
+      "methodSignature" : "public void iShouldSeeSearchResults()",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ ],
+      "stepType" : "COMMON",
+      "originalStepText" : "I should see search results",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "iAmOnTheProductDetailsScreen",
+      "annotation" : "@Given(\"I am on the product details screen\")",
+      "methodSignature" : "public void iAmOnTheProductDetailsScreen()",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ ],
+      "stepType" : "COMMON",
+      "originalStepText" : "I am on the product details screen",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "iShouldBeLoggedOut",
+      "annotation" : "@Then(\"I should be logged out\")",
+      "methodSignature" : "public void iShouldBeLoggedOut()",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ ],
+      "stepType" : "COMMON",
+      "originalStepText" : "I should be logged out",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "iAmOnTheProductsScreen",
+      "annotation" : "@Given(\"I am on the products screen\")",
+      "methodSignature" : "public void iAmOnTheProductsScreen()",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ ],
+      "stepType" : "COMMON",
+      "originalStepText" : "I am on the products screen",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "aUserWithIdExists",
+      "annotation" : "@Given(\"a user with ID \"\\(\\[\\^\"\\]\\+\\)\" exists\")",
+      "methodSignature" : "public void aUserWithIdExists(int param1, int param2)",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ "123", "123" ],
+      "stepType" : "COMMON",
+      "originalStepText" : "a user with ID \"123\" exists",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "iShouldSeeTheValidationError",
+      "annotation" : "@Then(\"I should see the validation error \"\\(\\[\\^\"\\]\\+\\)\"\")",
+      "methodSignature" : "public void iShouldSeeTheValidationError(String param1)",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ "Username and password are required" ],
+      "stepType" : "COMMON",
+      "originalStepText" : "I should see the validation error \"Username and password are required\"",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "iShouldSeeOnlyElectronicsProducts",
+      "annotation" : "@Then(\"I should see only electronics products\")",
+      "methodSignature" : "public void iShouldSeeOnlyElectronicsProducts()",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ ],
+      "stepType" : "COMMON",
+      "originalStepText" : "I should see only electronics products",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "iShouldSeeTheErrorMessage",
+      "annotation" : "@Then(\"I should see the error message \"\\(\\[\\^\"\\]\\+\\)\"\")",
+      "methodSignature" : "public void iShouldSeeTheErrorMessage(String param1)",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ "Invalid credentials" ],
+      "stepType" : "COMMON",
+      "originalStepText" : "I should see the error message \"Invalid credentials\"",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "iShouldSeeTheLoginScreen",
+      "annotation" : "@And(\"I should see the login screen\")",
+      "methodSignature" : "public void iShouldSeeTheLoginScreen()",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ ],
+      "stepType" : "COMMON",
+      "originalStepText" : "I should see the login screen",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "iLeaveTheUsernameFieldEmpty",
+      "annotation" : "@When(\"I leave the username field empty\")",
+      "methodSignature" : "public void iLeaveTheUsernameFieldEmpty()",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ ],
+      "stepType" : "COMMON",
+      "originalStepText" : "I leave the username field empty",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    }, {
+      "methodName" : "theUserShouldBeDeleted",
+      "annotation" : "@And(\"the user should be deleted\")",
+      "methodSignature" : "public void theUserShouldBeDeleted()",
+      "methodBody" : "// TODO: Implement common step logic\nlogger.info(\"Executing common step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "COMMONStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.common",
+      "parameters" : [ ],
+      "stepType" : "COMMON",
+      "originalStepText" : "the user should be deleted",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/common/COMMONStepDefinitions.java"
+    } ],
+    "API" : [ {
+      "methodName" : "iSendAPostRequestToWithTheFollowingData",
+      "annotation" : "@When(\"I send a POST request to \"\\(\\[\\^\"\\]\\+\\)\" with the following data:\")",
+      "methodSignature" : "public void iSendAPostRequestToWithTheFollowingData(String param1)",
+      "methodBody" : "// TODO: Implement API automation logic\n// Example: response = request.when().get(\"/api/endpoint\");\nlogger.info(\"Executing API step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "APIStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.api",
+      "parameters" : [ "/users" ],
+      "stepType" : "API",
+      "originalStepText" : "I send a POST request to \"/users\" with the following data:",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/api/APIStepDefinitions.java"
+    }, {
+      "methodName" : "iSendAGetRequestTo",
+      "annotation" : "@When(\"I send a GET request to \"\\(\\[\\^\"\\]\\+\\)\"\")",
+      "methodSignature" : "public void iSendAGetRequestTo(String param1, int param2)",
+      "methodBody" : "// TODO: Implement API automation logic\n// Example: response = request.when().get(\"/api/endpoint\");\nlogger.info(\"Executing API step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "APIStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.api",
+      "parameters" : [ "/users/123", "123" ],
+      "stepType" : "API",
+      "originalStepText" : "I send a GET request to \"/users/123\"",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/api/APIStepDefinitions.java"
+    }, {
+      "methodName" : "theResponseShouldContain",
+      "annotation" : "@And(\"the response should contain \"\\(\\[\\^\"\\]\\+\\)\"\")",
+      "methodSignature" : "public void theResponseShouldContain(String param1)",
+      "methodBody" : "// TODO: Implement API automation logic\n// Example: response = request.when().get(\"/api/endpoint\");\nlogger.info(\"Executing API step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "APIStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.api",
+      "parameters" : [ "user_id" ],
+      "stepType" : "API",
+      "originalStepText" : "the response should contain \"user_id\"",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/api/APIStepDefinitions.java"
+    }, {
+      "methodName" : "theResponseStatusCodeShouldBe",
+      "annotation" : "@Then(\"the response status code should be \\(\\\\d\\+\\)\")",
+      "methodSignature" : "public void theResponseStatusCodeShouldBe(int param1)",
+      "methodBody" : "// TODO: Implement API automation logic\n// Example: response = request.when().get(\"/api/endpoint\");\nlogger.info(\"Executing API step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "APIStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.api",
+      "parameters" : [ "201" ],
+      "stepType" : "API",
+      "originalStepText" : "the response status code should be 201",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/api/APIStepDefinitions.java"
+    }, {
+      "methodName" : "iSendAPutRequestToWithTheFollowingData",
+      "annotation" : "@When(\"I send a PUT request to \"\\(\\[\\^\"\\]\\+\\)\" with the following data:\")",
+      "methodSignature" : "public void iSendAPutRequestToWithTheFollowingData(String param1, int param2)",
+      "methodBody" : "// TODO: Implement API automation logic\n// Example: response = request.when().get(\"/api/endpoint\");\nlogger.info(\"Executing API step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "APIStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.api",
+      "parameters" : [ "/users/123", "123" ],
+      "stepType" : "API",
+      "originalStepText" : "I send a PUT request to \"/users/123\" with the following data:",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/api/APIStepDefinitions.java"
+    }, {
+      "methodName" : "iSendADeleteRequestTo",
+      "annotation" : "@When(\"I send a DELETE request to \"\\(\\[\\^\"\\]\\+\\)\"\")",
+      "methodSignature" : "public void iSendADeleteRequestTo(String param1, int param2)",
+      "methodBody" : "// TODO: Implement API automation logic\n// Example: response = request.when().get(\"/api/endpoint\");\nlogger.info(\"Executing API step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "APIStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.api",
+      "parameters" : [ "/users/123", "123" ],
+      "stepType" : "API",
+      "originalStepText" : "I send a DELETE request to \"/users/123\"",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/api/APIStepDefinitions.java"
+    } ],
+    "MOBILE" : [ {
+      "methodName" : "iAmLoggedInToTheMobileApp",
+      "annotation" : "@Given(\"I am logged in to the mobile app\")",
+      "methodSignature" : "public void iAmLoggedInToTheMobileApp()",
+      "methodBody" : "// TODO: Implement mobile automation logic\n// Example: driver.findElement(By.id(\"button\")).click();\nlogger.info(\"Executing mobile step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "MOBILEStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.mobile",
+      "parameters" : [ ],
+      "stepType" : "MOBILE",
+      "originalStepText" : "I am logged in to the mobile app",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/mobile/MOBILEStepDefinitions.java"
+    }, {
+      "methodName" : "iTapTheApplyButton",
+      "annotation" : "@And(\"I tap the apply button\")",
+      "methodSignature" : "public void iTapTheApplyButton()",
+      "methodBody" : "// TODO: Implement mobile automation logic\n// Example: driver.findElement(By.id(\"button\")).click();\nlogger.info(\"Executing mobile step: {}\");\nthrow new UnsupportedOperationException(\"Step not implemented yet\");",
+      "className" : "MOBILEStepDefinitions",
+      "packageName" : "com.testautomation.stepdefinitions.mobile",
+      "parameters" : [ ],
+      "stepType" : "MOBILE",
+      "originalStepText" : "I tap the apply button",
+      "filePath" : "src/test/java/stepdefinitions/com/testautomation/stepdefinitions/mobile/MOBILEStepDefinitions.java"
+    } ]
+  }
+}

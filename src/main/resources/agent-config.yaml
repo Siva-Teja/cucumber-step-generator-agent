@@ -1,0 +1,43 @@
+# Cucumber Step Definition Generator Agent Configuration
+
+# Output Settings
+outputDirectory: "src/test/java/stepdefinitions"
+basePackage: "com.testautomation.stepdefinitions"
+
+# Generation Settings
+generateWebSteps: true
+generateApiSteps: true
+generateMobileSteps: true
+generateCommonSteps: true
+
+# Organization Settings
+organizeByStepType: true
+organizeByFeature: false
+namingConvention: "CAMEL_CASE"
+
+# Report Settings
+generateReports: true
+reportFormats:
+  - "HTML"
+  - "JSON"
+  - "XML"
+
+# Validation Settings
+validateSteps: true
+excludedSteps: []
+
+# Template Settings
+templateDirectory: "src/main/resources/templates"
+customTemplates: {}
+
+# Advanced Settings
+maxMethodNameLength: 50
+includeComments: true
+generateJavadoc: false
+useLombok: false
+useSpringAnnotations: false
+
+# Logging Settings
+logLevel: "INFO"
+logToFile: true
+logFile: "logs/agent.log"

@@ -1,0 +1,39 @@
+// API automation step implementation
+{loggerStatement}
+
+try {
+    // TODO: Implement API automation logic
+    // Example implementations:
+    
+    if ("{stepText}".contains("GET") || "{stepText}".contains("get")) {
+        // response = request.when().get(param1);
+        logger.info("Making GET request to: {}", param1);
+    } else if ("{stepText}".contains("POST") || "{stepText}".contains("post")) {
+        // response = request.body(param1).when().post(param2);
+        logger.info("Making POST request to: {}", param2);
+    } else if ("{stepText}".contains("PUT") || "{stepText}".contains("put")) {
+        // response = request.body(param1).when().put(param2);
+        logger.info("Making PUT request to: {}", param2);
+    } else if ("{stepText}".contains("DELETE") || "{stepText}".contains("delete")) {
+        // response = request.when().delete(param1);
+        logger.info("Making DELETE request to: {}", param1);
+    } else if ("{stepText}".contains("status") || "{stepText}".contains("response code")) {
+        // int statusCode = response.getStatusCode();
+        // Assert.assertEquals(statusCode, Integer.parseInt(param1));
+        logger.info("Verifying status code: {}", param1);
+    } else if ("{stepText}".contains("body") || "{stepText}".contains("response")) {
+        // String responseBody = response.getBody().asString();
+        // Assert.assertTrue(responseBody.contains(param1));
+        logger.info("Verifying response body contains: {}", param1);
+    } else {
+        logger.warn("Step not implemented: {}", "{stepText}");
+    }
+    
+    // Log response details
+    // logger.info("Response status: {}", response.getStatusCode());
+    // logger.info("Response body: {}", response.getBody().asString());
+    
+} catch (Exception e) {
+    logger.error("Error executing API step: {}", e.getMessage());
+    throw new RuntimeException("API step execution failed", e);
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cucumber Step Definition Generation Report</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 20px; background-color: #f5f5f5; }
+.container { max-width: 1200px; margin: 0 auto; background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+h1 { color: #333; border-bottom: 2px solid #007bff; padding-bottom: 10px; }
+h2 { color: #555; margin-top: 30px; }
+.timestamp { color: #666; font-style: italic; }
+.section { margin-bottom: 30px; }
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+th { background-color: #f8f9fa; font-weight: bold; }
+.summary-table td:first-child { font-weight: bold; }
+.no-duplicates { color: #28a745; font-weight: bold; }
+tr:nth-child(even) { background-color: #f9f9f9; }</style>
+</head>
+<body>
+<div class="container">
+<h1>Cucumber Step Definition Generation Report</h1>
+<p class="timestamp">Generated on: 2025-10-14 22:18:18</p>
+<div class="section">
+<h2>Summary</h2>
+<table class="summary-table">
+<tr><td>Total Steps</td><td>78</td></tr>
+<tr><td>Total Feature Files</td><td>3</td></tr>
+<tr><td>Generated Definitions</td><td>54</td></tr>
+<tr><td>Duplicate Steps</td><td>8</td></tr>
+<tr><td>Unique Steps</td><td>70</td></tr>
+</table>
+</div>
+<div class="section">
+<h2>Feature Files Analysis</h2>
+<table class="data-table">
+<tr><th>Feature File</th><th>Steps</th><th>Types</th></tr>
+<tr><td>login.feature</td><td>16</td><td>{WEB=6, COMMON=10}</td></tr>
+<tr><td>api.feature</td><td>26</td><td>{COMMON=5, API=21}</td></tr>
+<tr><td>mobile.feature</td><td>36</td><td>{COMMON=34, MOBILE=2}</td></tr>
+</table>
+</div>
+<div class="section">
+<h2>Generated Step Definitions</h2>
+<table class="data-table">
+<tr><th>Step Type</th><th>Methods Generated</th><th>Classes</th></tr>
+<tr><td>WEB</td><td>3</td><td>1</td></tr>
+<tr><td>COMMON</td><td>43</td><td>1</td></tr>
+<tr><td>API</td><td>6</td><td>1</td></tr>
+<tr><td>MOBILE</td><td>2</td><td>1</td></tr>
+</table>
+</div>
+<div class="section">
+<h2>Duplicate Steps</h2>
+<table class="data-table">
+<tr><th>Step</th><th>Type</th><th>Found In Files</th></tr>
+<tr><td>Given I am on the product details screen</td><td>COMMON</td><td>mobile.feature, mobile.feature</td></tr>
+<tr><td>When I send a GET request to "/users/123"</td><td>API</td><td>api.feature, api.feature, api.feature</td></tr>
+<tr><td>Given I am on the products screen</td><td>COMMON</td><td>mobile.feature, mobile.feature</td></tr>
+<tr><td>Given a user with ID "123" exists</td><td>COMMON</td><td>api.feature, api.feature, api.feature</td></tr>
+<tr><td>And the response should contain "user_id"</td><td>API</td><td>api.feature, api.feature, api.feature, api.feature, api.feature, api.feature, api.feature, api.feature, api.feature</td></tr>
+<tr><td>When I enter username "valid@example.com" and password "password123"</td><td>COMMON</td><td>login.feature, login.feature, login.feature</td></tr>
+<tr><td>Then the response status code should be 201</td><td>API</td><td>api.feature, api.feature, api.feature, api.feature, api.feature, api.feature</td></tr>
+<tr><td>And I click the login button</td><td>WEB</td><td>login.feature, login.feature, login.feature, login.feature</td></tr>
+</table>
+</div>
+</div>
+</body>
+</html>

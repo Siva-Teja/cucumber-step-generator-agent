@@ -1,0 +1,11 @@
+/Users/si/cucumber-step-generator-agent/src/main/java/com/testautomation/agent/utils/NamingUtils.java
+/Users/si/cucumber-step-generator-agent/src/main/java/com/testautomation/agent/model/StepDefinition.java
+/Users/si/cucumber-step-generator-agent/src/main/java/com/testautomation/agent/parser/FeatureFileParser.java
+/Users/si/cucumber-step-generator-agent/src/main/java/com/testautomation/agent/generator/StepDefinitionGenerator.java
+/Users/si/cucumber-step-generator-agent/src/main/java/com/testautomation/agent/utils/DuplicateStepHandler.java
+/Users/si/cucumber-step-generator-agent/src/main/java/com/testautomation/agent/config/AgentConfig.java
+/Users/si/cucumber-step-generator-agent/src/main/java/com/testautomation/agent/model/GenerationConfig.java
+/Users/si/cucumber-step-generator-agent/src/main/java/com/testautomation/agent/utils/CodeTemplateManager.java
+/Users/si/cucumber-step-generator-agent/src/main/java/com/testautomation/agent/utils/ReportGenerator.java
+/Users/si/cucumber-step-generator-agent/src/main/java/com/testautomation/agent/model/FeatureStep.java
+/Users/si/cucumber-step-generator-agent/src/main/java/com/testautomation/agent/StepDefinitionGeneratorAgent.java
